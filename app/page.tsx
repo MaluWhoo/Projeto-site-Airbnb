@@ -1,3 +1,5 @@
+// Utilizando icons - npm install @tabler/icons-react 
+
 import BarraSuperior from "@/widgets/BarraSuperior";
 
 export default function Home() {
