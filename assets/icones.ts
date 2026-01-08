@@ -4,5 +4,7 @@
 export {
     IconUserCircle, 
     IconSearch,
-    IconAdjustmentsHorizontal
+    IconAdjustmentsHorizontal,
+    IconHeartFilled,
+    IconStarFilled
 } from '@tabler/icons-react'
