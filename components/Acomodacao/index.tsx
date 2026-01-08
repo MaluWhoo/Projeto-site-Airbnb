@@ -19,7 +19,14 @@ const Acomodacao = ( {
     return (
         <figure className="relative"> {/* Usando figure e figcaption para representar uma imagem com legenda */}
             <div className="p-2 absolute w-full flex flex-row justify-between items-center">
-                <span className="bg-white rounded-full px-4 py-1 font-semibold">Preferido dos hóspedes</span>
+                <div>
+                    {preferidoHospedes && ( // Se preferidoHospedes for true, show the span
+                        <span className="bg-white rounded-full px-4 py-1 font-semibold">
+                            Preferido dos hóspedes
+                        </span>                        
+                    )}
+                </div>
+
                 <IconHeartFilled className="stroke-white oppacity-80" 
                 arial-label="Favoritos" size={30}/>
             </div>  
@@ -35,7 +42,7 @@ const Acomodacao = ( {
                         <span className="font-semibold">{avaliacao}</span>                         
                     </div>
                 </div>
-                    <div>Anfitriã(o): {anfitriao}</div>
+                    <div>Anfitrião(o): {anfitriao}</div>
                 <div>{data}</div>
                 <div className="font-semibold">R$ {preco}</div>
             </figcaption>
