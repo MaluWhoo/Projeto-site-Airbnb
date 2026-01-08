@@ -2268,7 +2268,14 @@ const Acomodacoes = () => {
         grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
             {ListaAcomodacoes.map( (item, indice)=>(
                 <div key={indice}>
-                  <Acomodacao>
+                  <Acomodacao
+                    local={item.location.description}
+                    anfitriao={item.host}
+                    data={item.date}
+                    preco={item.price}
+                    avaliacao={item.rating}
+                    preferidoHospedes={item.hasBadge}
+                  >
                     <Image className="w-full aspect-square object-cover rounded-xl"
                       src={item.photos[0].source} 
                       alt={item.photos[0].description}
