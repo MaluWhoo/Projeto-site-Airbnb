@@ -1,18 +1,25 @@
 // Utilizando icons - npm install @tabler/icons-react 
+// npm install swiper, no site da Swiper - biblioteca para o carrossel de imagens 
 
+import BarraPesquisa from "@/widgets/BarraPesquisa";
 import BarraSuperior from "@/widgets/BarraSuperior";
+import NavegacaoAbasHorizontal from "@/widgets/NavegacaoAbasHorizontal";
 
 export default function Home() {
   return (
     <>
-      <div>
+      <header className="container mx-auto">
         <BarraSuperior />
-      </div>
+        <BarraPesquisa />
+      </header>
 
-      <hr />
+      <hr className="border-gray-200 my-3"/>
 
-      <div className="border-green-600 border-2">Área conteudos</div>
-      <div className="border-purple-600 border-2">Rodape</div>
+      <main className="container mx-auto">
+        <NavegacaoAbasHorizontal />
+      </main>
+    
+      <footer className="container mx-auto">Rodape</footer>
     </>
   );
 }
